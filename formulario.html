@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Repaso-Ejercitacion</title>
+</head>
+<body>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li class="boton">
+                Productos
+            </li>
+            <li class="boton">
+               <a class="link-botom" href="./formulario.html"> Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Contacto</h1>
+    <section class="seccion-formulario">
+        <form action="https://formspree.io/f/mvongjoa" method="POST">
+            <div>
+                 <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombreUsuario"/>
+            </div>
+
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellidoUsuario"/>
+
+            <label for="correo">Correo Electronico:</label>
+            <input type="email" id="correo" name="correoUsuario"/><!--dfsdf@asda.asd "traba" para que no envie el formulario si no tiene la estructura de un correo-->
+            <label for="pass">
+                Contraseña:
+                <input type="password" id="pass" name="contraseñaUsuario">
+            </label>
+            <div>
+                <label for="horarios">Ingrese en que franja horaria nos podemos comunicar: </label>
+            </div>
+            <div>
+                <label for="TM">De 9hs a 12hs</label>
+                <input type="radio" id="TM" name="horarrioDeContacto" value="9hs a 12hs">
+                <label for="TT">De 12hs a 17hs</label>
+                <input type="radio" id="TT" name="horarrioDeContacto" value="12hs a 17hs">
+            </div>
+            <label for="notificaciones">Indique si que tipo de notificaciones quiere recibir: </label>
+
+            <label for="notificacion">Productos Nuevos </label>
+            <input type="checkbox" name="notificaciones" id="notificacion" value="nuevos productos">
+
+
+            <label for="notificacion">Promociones </label>
+            <input type="checkbox" name="notificaciones" id="promos" value="promociones">
+            <div>
+                <label for="paisOrigen">Nacionalidad</label>
+                <select name="Nacionalidad" id="paisOrigen">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Uruguaya">Uruguaya</option>
+                    <option value="Chilena">Chilena</option>
+                </select>
+            </div>
+            <div>
+                <label for="mensaje">Escriba sus comentarios:</label>
+                    <textarea name="comentarios" id="mensaje" cols="30" rows="10"></textarea>
+
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+
+    </section>
+</body>
+</html>
+
+<!--GET: busca algo y lo trae ,POST: desde el navegador envio informacion
+    ,put ,patch ,delete-->
