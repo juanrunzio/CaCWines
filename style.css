@@ -2,8 +2,8 @@
   /* sirve para crear var(variables)*/
   --font-primary: "Alegreya Sans", sans-serif;
   --font-secondary: "Bobby Jones Soft Regular";
-  /*se usa asi:
-  body {
+  /*se usa asi, ejemplo:
+  section_en_uso {
   font-family: var(--font-primary);
   }
 
@@ -16,10 +16,22 @@
   --coloOpcionalNegro: rgba(50, 50, 50, 1);
   /*
   Ejemplo de uso: 
-  "background-color: var(--colorPrimario);"
+  "background-color-o-el-contenedor-que-sea: var(--colorPrimario);"
   */
 }
-/* MUY IMPORTANTE --> USAR los nombres de las clases y que sean UNICOS */
+/* MUY IMPORTANTE --> USAR los nombres de las clases y que sean UNICOS 
+Ejemplo de uso:
+
+.signUp span{
+  font-weight: 600;
+}
+.mainHero{
+  display: flex;
+  justify-content:start;
+  position: sticky;
+}
+
+*/
 
 /*Maquetado general*/
 html {
