@@ -14,7 +14,20 @@
   --colorLetrasBlanco: #ffffff;
   --colorLetrasGris: #949293;
   --coloOpcionalNegro: rgba(50, 50, 50, 1);
-  /*Ejemplo de uso: "background-color: var(--colorPrimario);"*/
+  /*
+  Ejemplo de uso: 
+  "background-color: var(--colorPrimario);"
+  */
+}
+/* MUY IMPORTANTE --> USAR los nombres de las clases y que sean UNICOS */
+
+/*Maquetado general*/
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /*Maquetado Juan*/
@@ -27,10 +40,6 @@
 /* Estilos para el título de tipos de vino */
 * {
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
