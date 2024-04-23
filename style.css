@@ -44,6 +44,78 @@ html {
 
 /*Maquetado Juan*/
 
+/* Estilos para el hero y el encabezado */
+.hero {
+  /* background-color: #f4f4f4;  Color de fondo del hero */
+  background: linear-gradient(
+      180deg,
+      rgba(253, 225, 221, 0.6) 0%,
+      rgba(145, 119, 87, 0.6) 37%,
+      rgba(88, 52, 0, 0.6) 100%
+    ),
+    url(./img/road-428039_1280.jpg);
+  /* background: url("/img/road-428039_1280.jpg"); */
+  background-size: cover; /* Cubre todo el contenedor con la imagen */
+  padding: 300px 0;
+  display: flex;
+  justify-content: space-around;
+  background-position: center; /* Centra la imagen */
+}
+
+/* Estilos para el navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: unset;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: unset;
+}
+
+.nav-link:hover {
+  color: #666;
+}
+
+/* Estilos para el logo */
+.logo {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.logo h1 {
+  margin: 0;
+  justify-content: center;
+}
+
+.link-bottom {
+  margin-right: 0; /* Elimina el margen derecho para el último botón */
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+  }
+}
+
 /*-----------------------------------------------------------------------*/
 /*Maquetado Carlos*/
 
