@@ -44,6 +44,89 @@ html {
 
 /*Maquetado Juan*/
 
+/* Estilos para el hero y el encabezado */
+.hero {
+  /* background-color: #f4f4f4;  Color de fondo del hero */
+  background: linear-gradient(
+      180deg,
+      rgba(253, 225, 221, 0.6) 0%,
+      rgba(145, 119, 87, 0.6) 37%,
+      rgba(88, 52, 0, 0.6) 100%
+    ),
+    url(./img/road-428039_1280.jpg);
+  /* background: url("/img/road-428039_1280.jpg"); */
+  background-size: cover; /* Cubre todo el contenedor con la imagen */
+  padding: 300px 0;
+  display: flex;
+  justify-content: space-around;
+  background-position: center; /* Centra la imagen */
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed;
+}
+
+/* Estilos para el navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: unset;
+}
+
+.nav_item {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: unset;
+}
+
+.nav_item:hover {
+  color: #666;
+}
+#menu {
+  display: none; /* Oculta el menú hamburguesa por defecto */
+  color: var(--colorNegro);
+}
+/* Estilos para el logo */
+.logo {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  transition: top 0.5s ease, left 0.5s ease;
+}
+
+.logo h1 {
+  margin: 0;
+  justify-content: center;
+  margin-bottom: 15px;
+  animation-name: izquierda;
+  animation-duration: 2s;
+}
+@keyframes izquierda {
+  0% {
+    transform: translatey(-520px);
+  }
+  50% {
+    color: slategrey;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+.link-bottom {
+  margin-right: 0; /* Elimina el margen derecho para el último botón */
+}
+
 /*-----------------------------------------------------------------------*/
 /*Maquetado Carlos*/
 
@@ -177,6 +260,53 @@ button:hover {
 
 
 /* ---------------------------------------------------------- */
+/* Estilos para pantallas pequeñas --> Juan */
+@media screen and (max-width: 850px) {
+  .navbar {
+    display: none; /* Oculta los botones de navegación en pantallas pequeñas */
+  }
+  .nav-buttons {
+    display: none; /* Oculta los botones de navegación en pantallas pequeñas */
+  }
+
+  #menu {
+    display: block; /* Muestra el menú hamburguesa en pantallas pequeñas */
+    cursor: pointer;
+    position: absolute;
+    top: 9%;
+    right: 50px;
+  }
+  .menu-open .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-open .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .menu-open .nav-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-open #menu {
+    display: block; /* Muestra el logo en el menú hamburguesa abierto */
+    position: absolute; /* Posición absoluta para el logo dentro del menú */
+    top: 9%; /* Centra verticalmente el logo */
+    right: 50px; /* Ajusta la posición horizontal para mantener el logo a la izquierda */
+  }
+
+  /* Mostrar el logo en el menú hamburguesa abierto */
+  .menu-open .logo {
+    display: block; /* Muestra el logo en el menú hamburguesa abierto */
+    position: absolute; /* Posición absoluta para el logo dentro del menú */
+    top: 5%; /* Centra verticalmente el logo */
+    left: 20px; /* Ajusta la posición horizontal para mantener el logo a la izquierda */
+    transition: top 2s ease, left 2s ease;
+  }
+}
 
 @media (min-width: 850px) {
   #nuestrosVinos .vinos {
