@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
@@ -18,25 +22,27 @@
     />
   </head>
   <body>
-    <header>
-        <section>
-          <nav>
-            <a class="link-botom" href="./index.html">HOME</a>
-            <a href="#about">SOBRE NOSOTROS</a>
-            <a href="#history">HISTORIA</a
-            ><!--Frase del vino + Historia del vino(misma redirec)-->
-          </nav>
-          <a class="link-botom" href="./index.html">
-            <h1>CaCWine</h1>
-          </a>
-          <div>
-            <a href="#nuestrosVinos">VINOS</a>
-            <a class="link-botom" href="./formulario.html"> CONTACTO</a>
-            <a href="#footer">DOWN</a
-            ><!--hasta el footer-->
-          </div>
-        </section>
-      </header>
+    <header class="header">
+      <section class="hero">
+        <nav class="navbar">
+          <div class="nav-buttons"></div>
+          <div id="close" class="fas fa-times"></div>
+          <a href="#" class="nav_item">HOME</a>
+          <a href="./index.html" class="nav_item">SOBRE NOSOTROS</a>
+          <a href="./index.html" class="nav_item">HISTORIA</a>
+        </nav>
+        <a href="#" class="logo">
+          <h1>CaCWine</h1>
+        </a>
+        <div class="nav-buttons">
+          <div id="close" class="fas fa-times"></div>
+          <a href="./index.html" class="nav_item">VINOS</a>
+          <a href="./formulario.html" class="nav_item link-bottom">CONTACTO</a>
+          <a href="#footer" class="nav_item">DOWN</a>
+        </div>
+        <div id="menu" class="fas fa-bars"></div>
+      </section>
+    </header>
     </nav>
     <h1>Contacto</h1>
     <section class="seccion-formulario">
@@ -119,6 +125,36 @@
         <input type="submit" value="Enviar" />
       </form>
     </section>
+
+
+
+    <footer class="pie-de-pagina" id="footer">
+      <div class="footerContenedor">
+        <div class="footerNav">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Sobre Nosotros</a></li>
+              <li><a href="">Historia</a></li>
+              <li><a href="">Vinos</a></li>
+              <li><a href="./formulario.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="IconosRedes">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="legal">
+          <p> " © 2024 CaCWines, todos los derechos reservados. "
+            <span class="invisible-space"></span>
+            <a href=""> Políticas de privacidad </a>
+            <span class="invisible-space"></span>
+            <a href=""> Términos y condiciones </a>
+          </p>
+      </div>
+      </div>
+
+    </footer>
     <!--linkeo de js-->
     <script src="app.js"></script>
   </body>
