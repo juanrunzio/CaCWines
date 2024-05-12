@@ -249,6 +249,77 @@ button:hover {
     ),
     url("./img/CuadroTest.webp");
 }
+/*---------- Diseño del Formulario de Contacto ----------*/
+
+/* Estilos para la seccion del formulario */
+.seccion-formulario {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid var(--colorLetrasGris);
+  border-radius: 5px;
+  background-color: var(--coloOpcionalNegro);
+  max-width: 100%;
+}
+
+/* Estilo H2 Texto y demas */
+.seccion-formulario h2 {  
+  text-align: center;
+}
+
+/* Etiquetas de texto */
+.seccion-formulario label {
+  font-family: var(--font-primary);
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--colorLetrasBlanco);
+  
+}
+
+/* H2 Contacto y Texto */
+
+.seccion-formulario h2 {
+  text-align: center;
+}
+
+/* Entradas Texto */
+.seccion-formulario input[type="text"],
+.seccion-formulario input[type="email"],
+.seccion-formulario input[type="password"],
+.seccion-formulario select,
+.seccion-formulario textarea {
+  font-family: var(--font-primary);
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: var(--colorLetrasGris);
+  border: 1px solid var(--colorLetrasGris);
+  border-radius: 5px;
+  resize: none;
+  box-shadow: 2px 2px 2px rgba(253, 225, 221, 0.6)
+}
+
+/* Checkbox  */
+.seccion-formulario input[type="radio"],
+.seccion-formulario input[type="checkbox"] {
+  margin-right: 5px;
+  background-color: var(--colorLetrasGris);
+}
+
+/* boton de enviar */
+.seccion-formulario input[type="submit"] {
+  background-color: var(--colorPrimario);
+  color: var(--colorLetrasBlanco);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seccion-formulario input[type="submit"]:hover {
+  background-color: var(--colorPrimarioHover);
+}
+
 
 /*-------------------- CSS DE FOOTER --------------------*/
 
@@ -290,16 +361,6 @@ footer{
 }
 
 
-/*
-ul {
-  list-style: none;
-}
-
-li {
-  font-size: 1.25em;
-}
-*/
-
 .footerNav ul{
   display: flex;
   justify-content: center;
@@ -308,7 +369,7 @@ li {
 }
 
 .invisible-space {
-  margin-right: 20px; /* Ajusta el margen derecho según tu necesidad */
+  margin-right: 20px; /* Ajusta el margen derecho segun tu necesidad */
 }
 
 .footerNav ul li a{
