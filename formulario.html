@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/56b1d105d2fa63f97d89d9626b476ec8?family=Bobby+Jones+Soft+Regular"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+        <section>
+          <nav>
+            <a class="link-botom" href="./index.html">HOME</a>
+            <a href="#about">SOBRE NOSOTROS</a>
+            <a href="#history">HISTORIA</a
+            ><!--Frase del vino + Historia del vino(misma redirec)-->
+          </nav>
+          <a class="link-botom" href="./index.html">
+            <h1>CaCWine</h1>
+          </a>
+          <div>
+            <a href="#nuestrosVinos">VINOS</a>
+            <a class="link-botom" href="./formulario.html"> CONTACTO</a>
+            <a href="#footer">DOWN</a
+            ><!--hasta el footer-->
+          </div>
+        </section>
+      </header>
+    </nav>
+    <h1>Contacto</h1>
+    <section class="seccion-formulario">
+      <form action="https://formspree.io/f/mvongjoa" method="POST">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombreUsuario" />
+        </div>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellidoUsuario" />
+
+        <label for="correo">Correo Electronico:</label>
+        <input
+          type="email"
+          id="correo"
+          name="correoUsuario"
+        /><!--dfsdf@asda.asd "traba" para que no envie el formulario si no tiene la estructura de un correo-->
+        <label for="pass">
+          Contraseña:
+          <input type="password" id="pass" name="contraseñaUsuario" />
+        </label>
+        <div>
+          <label for="horarios"
+            >Ingrese en que franja horaria nos podemos comunicar:
+          </label>
+        </div>
+        <div>
+          <label for="TM">De 9hs a 12hs</label>
+          <input
+            type="radio"
+            id="TM"
+            name="horarrioDeContacto"
+            value="9hs a 12hs"
+          />
+          <label for="TT">De 12hs a 17hs</label>
+          <input
+            type="radio"
+            id="TT"
+            name="horarrioDeContacto"
+            value="12hs a 17hs"
+          />
+        </div>
+        <label for="notificaciones"
+          >Indique si que tipo de notificaciones quiere recibir:
+        </label>
+
+        <label for="notificacion">Productos Nuevos </label>
+        <input
+          type="checkbox"
+          name="notificaciones"
+          id="notificacion"
+          value="nuevos productos"
+        />
+
+        <label for="notificacion">Promociones </label>
+        <input
+          type="checkbox"
+          name="notificaciones"
+          id="promos"
+          value="promociones"
+        />
+        <div>
+          <label for="paisOrigen">Nacionalidad</label>
+          <select name="Nacionalidad" id="paisOrigen">
+            <option value="Argentina">Argentina</option>
+            <option value="Uruguaya">Uruguaya</option>
+            <option value="Chilena">Chilena</option>
+          </select>
+        </div>
+        <div>
+          <label for="mensaje">Escriba sus comentarios:</label>
+          <textarea
+            name="comentarios"
+            id="mensaje"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+    <!--linkeo de js-->
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!--GET: busca algo y lo trae ,POST: desde el navegador envio informacion
+    ,put ,patch ,delete-->
