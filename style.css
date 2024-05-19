@@ -250,8 +250,7 @@ button:hover {
     url("./img/CuadroTest.webp");
 }
 /*---------- Diseño del Formulario de Contacto ----------*/
-
-/* Estilos para la seccion del formulario */
+/* Estilos para la sección del formulario */
 .seccion-formulario {
   margin: 20px;
   padding: 20px;
@@ -261,52 +260,85 @@ button:hover {
   max-width: 100%;
 }
 
-/* Estilo H2 Texto y demas */
-.seccion-formulario h2 {  
+.seccion-formulario h2 {
   text-align: center;
+  font-family: var(--font-primary);
+  margin-bottom: 30px;
+
 }
 
 /* Etiquetas de texto */
 .seccion-formulario label {
   font-family: var(--font-primary);
-  display: block;
+  display: inline-block;
+  width: 100px;
   margin-bottom: 5px;
+  margin-right: 20px;
   font-weight: bold;
   color: var(--colorLetrasBlanco);
-  
+  white-space: nowrap;
 }
 
-/* H2 Contacto y Texto */
-
-.seccion-formulario h2 {
-  text-align: center;
-}
-
-/* Entradas Texto */
+/* Entradas de texto y demas */
 .seccion-formulario input[type="text"],
 .seccion-formulario input[type="email"],
-.seccion-formulario input[type="password"],
+.seccion-formulario input[type="tel"],
 .seccion-formulario select,
 .seccion-formulario textarea {
   font-family: var(--font-primary);
-  width: 100%;
+  width: calc(100% - 0px); /* Ajuste de ancho para inputs */
   padding: 8px;
   margin-bottom: 10px;
   background-color: var(--colorLetrasGris);
   border: 1px solid var(--colorLetrasGris);
   border-radius: 5px;
   resize: none;
-  box-shadow: 2px 2px 2px rgba(253, 225, 221, 0.6)
+  box-shadow: 2px 2px 2px rgba(253, 225, 221, 0.6);
 }
 
-/* Checkbox  */
+/* Estilos para nombre y apellido */
+.nombre-apellido {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nombre-apellido div {
+  width: calc(50% - 10px); /* Ajuste de ancho para divs */
+}
+
+.email-telefono {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-telefono div {
+  width: calc(50% - 10px); /* Ajuste de ancho para divs */
+}
+
+
+.nombre-apellido input[type="text"],
+.email-telefono input[type="email"],
+.email-telefono input[type="tel"] {
+  width: 100%; /* Ancho completo dentro de cada div */
+}
+
+
+
+
+
+/* Checkbox y Radio */
 .seccion-formulario input[type="radio"],
 .seccion-formulario input[type="checkbox"] {
   margin-right: 5px;
   background-color: var(--colorLetrasGris);
 }
 
-/* boton de enviar */
+/* Afecta a todos los DIV del form */
+.seccion-formulario div {
+  margin-bottom: 10px;
+}
+
+/* Boton de enviar */
 .seccion-formulario input[type="submit"] {
   background-color: var(--colorPrimario);
   color: var(--colorLetrasBlanco);
