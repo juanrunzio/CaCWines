@@ -130,6 +130,190 @@ html {
 /*-----------------------------------------------------------------------*/
 /*Maquetado Carlos*/
 
+.historia {
+  display: flex;
+  align-items: center;
+}
+.sobreNosotros {
+  background-image: url("./img/pexels-photo-2664185.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  color: #f6f5f5;
+  padding-top: 50px;
+}
+
+.sobreNosotros h2 {
+  margin-top: -50px;
+}
+
+.weus {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  animation-name: izquierda;
+  animation-duration: 3s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texto2 {
+  font-size: 1.2rem;
+  font-style: "Alegreya Sans", sans-serif;
+  text-align: center;
+  animation-name: izquierda;
+  animation-duration: 3s;
+  gap: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.parrafos {
+  display: flex;
+  font-style: "Alegreya Sans", sans-serif;
+  overflow-y: auto;
+  text-align: center;
+  align-items: center;
+  animation-name: izquierda;
+  animation-duration: 4s;
+}
+.texto {
+  margin-top: 0px;
+  width: 70%;
+}
+.tituloYfrase {
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+}
+
+.quote {
+  font-size: 1.2rem;
+  font-style: "Alegreya Sans", sans-serif;
+  text-align: right;
+  animation-name: izquierda;
+  animation-duration: 4s;
+  gap: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tituloDesarrollo {
+  margin: auto;
+  text-align: right;
+  font: size 1rem;
+  color: #000000;
+  font-style: "Bobby Jones Soft Regular";
+  animation-name: izquierda;
+  animation-duration: 4s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgb(2, 2, 2);
+  /* Fondo semi-transparente para mejorar la legibilidad */
+}
+
+.video-background {
+  position: static;
+
+  left: 90%;
+  width: 30%;
+  height: 550px;
+  object-fit: cover;
+  z-index: -1;
+  animation-name: izquierda;
+  animation-duration: 4s;
+}
+
+.Desarrollo {
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .texto {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    /* Cambiado a 100% para ocupar todo el ancho disponible */
+    max-width: 800px;
+    /* Un valor máximo para evitar que el contenedor se vuelva demasiado ancho */
+    height: 500px;
+    overflow-y: auto;
+  }
+
+  .weus {
+    padding: 0 10px;
+  }
+
+  .historia {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .histo {
+    gap: 50px;
+  }
+
+  .video-background {
+    width: 50%;
+  }
+
+  .parrafos {
+    display: flex;
+    justify-content: space-around;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .weus {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0 5px;
+    overflow-y: auto;
+    font-size: 0.5rem;
+  }
+  .tituloYfrase {
+    margin: 1.3rem;
+  }
+  .nosotros {
+    font-size: 2.2rem;
+  }
+  .sobreNosotros {
+    margin: 0;
+  }
+  .sobreNosotros h2 {
+    margin: 0;
+  }
+  .texto2 {
+    font-size: 1rem;
+    margin-top: 50px;
+  }
+
+  .parrafos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .video-background {
+    width: 90%;
+    height: 40%;
+  }
+
+  .texto {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    overflow-y: auto;
+    font-size: 1rem;
+  }
+}
+
 /*-----------------------------------------------------------------------*/
 /*Maquetado de Facundo*/
 /* Estilos para el título de tipos de vino */
