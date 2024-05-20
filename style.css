@@ -130,6 +130,220 @@ html {
 /*-----------------------------------------------------------------------*/
 /*Maquetado Carlos*/
 
+.historia {
+  display: flex;
+  align-items: center;
+}
+.sobreNosotros {
+  background-image: url("./img/pexels-photo-2664185.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 10rem;
+  color: #f6f5f5;
+}
+
+.nosotros {
+  padding-bottom: 3rem;
+  font-size: 4rem;
+}
+
+.weus {
+  text-align: center;
+  animation-name: izquierda;
+  animation-duration: 3s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texto2 {
+  font-size: 1.2rem;
+  font-style: "Alegreya Sans", sans-serif;
+  text-align: center;
+  animation-name: izquierda;
+  animation-duration: 3s;
+  gap: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.parrafos {
+  display: flex;
+  font-style: "Alegreya Sans", sans-serif;
+  overflow-y: auto;
+  text-align: center;
+  align-items: center;
+  animation-name: izquierda;
+  animation-duration: 4s;
+}
+.texto {
+  margin-top: 0px;
+  width: 90%;
+  justify-content: end;
+  font-size: 1.2rem;
+}
+.tituloYfrase {
+  margin-top: 1.5rem;
+}
+
+.quote {
+  font-family: var(--font-secondary);
+  text-align: center;
+  animation-name: izquierda;
+  animation-duration: 4s;
+  gap: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding-top: 2rem;
+  padding-bottom: 1.1rem;
+}
+.historiaTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 70%;
+}
+
+.tituloDesarrollo {
+  font-size: 2rem;
+  margin: auto;
+  justify-content: end;
+  color: #000000;
+  font-family: var(--font-primary);
+  animation-name: izquierda;
+  animation-duration: 4s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgb(2, 2, 2);
+  /* Fondo semi-transparente para mejorar la legibilidad */
+}
+
+.video-background {
+  position: static;
+
+  left: 90%;
+  width: 30%;
+  height: 550px;
+  object-fit: cover;
+  z-index: -1;
+  animation-name: izquierda;
+  animation-duration: 4s;
+}
+
+.Desarrollo {
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .texto {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    /* Cambiado a 100% para ocupar todo el ancho disponible */
+    max-width: 800px;
+    /* Un valor máximo para evitar que el contenedor se vuelva demasiado ancho */
+    height: 500px;
+    overflow-y: auto;
+  }
+
+  .weus {
+    padding-top: 2rem;
+  }
+
+  .historia {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .histo {
+    gap: 50px;
+  }
+
+  .video-background {
+    width: 80%;
+  }
+
+  .parrafos {
+    display: flex;
+    flex-direction: column;
+
+    object-fit: cover;
+  }
+  .Desarrollo {
+    margin-bottom: 25px;
+  }
+  .texto2 {
+    margin: 0;
+    width: 100%;
+  }
+  .sobreNosotros {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .nosotros {
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .weus {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0 5px;
+    overflow-y: auto;
+    font-size: 0.5rem;
+  }
+  .tituloYfrase {
+    margin: 1.3rem;
+  }
+  .nosotros {
+    font-size: 2.2rem;
+  }
+  .sobreNosotros {
+    margin: 0;
+  }
+  .sobreNosotros h2 {
+    margin: 0;
+  }
+  .texto2 {
+    font-size: 1rem;
+    margin-top: 50px;
+    width: 80%;
+  }
+
+  .parrafos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .video-background {
+    width: 90%;
+    height: 40%;
+  }
+
+  .texto {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    overflow-y: auto;
+    font-size: 1rem;
+  }
+  .Desarrollo {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  .tituloDesarrollo {
+    padding-top: 2rem;
+  }
+}
+
 /*-----------------------------------------------------------------------*/
 /*Maquetado de Facundo 15-04*/
 /* Estilos para el título de tipos de vino */
@@ -262,7 +476,7 @@ button:hover {
 }
 
 /* Estilo H2 Texto y demas */
-.seccion-formulario h2 {  
+.seccion-formulario h2 {
   text-align: center;
 }
 
@@ -273,7 +487,6 @@ button:hover {
   margin-bottom: 5px;
   font-weight: bold;
   color: var(--colorLetrasBlanco);
-  
 }
 
 /* H2 Contacto y Texto */
@@ -296,7 +509,7 @@ button:hover {
   border: 1px solid var(--colorLetrasGris);
   border-radius: 5px;
   resize: none;
-  box-shadow: 2px 2px 2px rgba(253, 225, 221, 0.6)
+  box-shadow: 2px 2px 2px rgba(253, 225, 221, 0.6);
 }
 
 /* Checkbox  */
@@ -320,59 +533,65 @@ button:hover {
   background-color: var(--colorPrimarioHover);
 }
 
-
 /*-------------------- CSS DE FOOTER --------------------*/
 
-
-footer{
+footer {
   background-color: var(--coloOpcionalNegro);
 }
-.footerContenedor{
+.footerContenedor {
   width: 100%;
-  padding: 70px 30px 20px ;
+  padding: 70px 30px 20px;
 }
-.IconosRedes{
+.IconosRedes {
   display: flex;
   justify-content: center;
 }
-.IconosRedes a{
+.IconosRedes a {
   text-decoration: none;
-  padding:  10px;
+  padding: 10px;
   background-color: var(--colorLetrasBlanco);
   margin: 10px;
   border-radius: 50%;
 }
-.IconosRedes a i{
+.IconosRedes a i {
   font-size: 2em;
   color: var(--colorNegro);
-  opacity: 0,9;
+  opacity: 0, 9;
 }
 /* Iconos de redes sociales */
-.IconosRedes a:hover{
+.IconosRedes a:hover {
   background-color: var(--colorNegro);
   transition: 0.5s;
 }
-.IconosRedes a:hover i{
+.IconosRedes a:hover i {
   color: var(--colorLetrasBlanco);
   transition: 0.5s;
 }
-.footerNav{
+.footerNav {
   margin: 30px 0;
 }
 
+/*
+ul {
+  list-style: none;
+}
 
-.footerNav ul{
+li {
+  font-size: 1.25em;
+}
+*/
+
+.footerNav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  
 }
 
 .invisible-space {
   margin-right: 20px; /* Ajusta el margen derecho segun tu necesidad */
 }
 
-.footerNav ul li a{
+.footerNav ul li a {
   color: var(--colorLetrasBlanco);
   margin: 20px;
   font-family: var(--font-primary);
@@ -381,21 +600,20 @@ footer{
   font-size: 1.3em;
   opacity: 0.7;
   transition: 0.5s;
-
 }
-.footerNav ul li a:hover{
+.footerNav ul li a:hover {
   opacity: 1;
 }
-.footerBottom{
+.footerBottom {
   background-color: var(--colorNegro);
   padding: 20px;
   text-align: center;
 }
-.footerBottom p{
+.footerBottom p {
   color: var(--colorLetrasBlanco);
 }
 
-.legal{
+.legal {
   opacity: 0.7;
   font-family: var(--font-primary);
   text-transform: uppercase;
@@ -406,29 +624,22 @@ footer{
   margin: 30px 5px;
 }
 
-@media (max-width: 850px){
-  .footerNav ul{
+@media (max-width: 850px) {
+  .footerNav ul {
     flex-direction: column;
     text-align: center;
-  } 
-  .footerNav ul li{
+  }
+  .footerNav ul li {
     text-transform: uppercase;
     justify-content: center;
     text-align: center;
     margin: 10px;
   }
-  .IconosRedes a{
+  .IconosRedes a {
     padding: 8px;
     margin: 4px;
   }
-
-
 }
-
-
-
-
-
 
 /* ---------------------------------------------------------- */
 /* Estilos para pantallas pequeñas --> Juan */
