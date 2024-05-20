@@ -339,7 +339,7 @@ container {
 }
 
 /*-----------------------------------------------------------------------*/
-/*Maquetado de Facundo*/
+/*Maquetado de Facundo 15-04*/
 /* Estilos para el título de tipos de vino */
 * {
   box-sizing: border-box;
@@ -354,30 +354,26 @@ h1 {
   font-size: 3.5em;
 }
 /* ".contenedorTextoHero > h2{" */
-h2 {
+.container h2 {
   font-size: 2.7em;
+  font-family: var(--font-primary);
 }
 
-h3 {
+.vinos h3 {
   font-size: 2em;
+  font-family: var(--font-secondary);
 }
 
-p {
+.vinos p {
   font-size: 1.25em;
   margin-top: 100px;
+  font-family: var(--font-primary);
 }
 
-ul {
-  list-style: none;
-}
-
-li {
-  font-size: 1.25em;
-}
-
-button {
+.vinos button {
   font-size: 1.25em;
   font-weight: bold;
+  font-family: var(--font-primary);
   padding: 10px 30px;
   border-radius: 5px;
   border: 2px solid rgba(0, 0, 0, 0.3);
@@ -461,6 +457,125 @@ button:hover {
     ),
     url("./img/CuadroTest.webp");
 }
+
+/*-------------------- CSS DE FOOTER --------------------*/
+
+
+footer{
+  background-color: var(--coloOpcionalNegro);
+}
+.footerContenedor{
+  width: 100%;
+  padding: 70px 30px 20px ;
+}
+.IconosRedes{
+  display: flex;
+  justify-content: center;
+}
+.IconosRedes a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: var(--colorLetrasBlanco);
+  margin: 10px;
+  border-radius: 50%;
+}
+.IconosRedes a i{
+  font-size: 2em;
+  color: var(--colorNegro);
+  opacity: 0,9;
+}
+/* Iconos de redes sociales */
+.IconosRedes a:hover{
+  background-color: var(--colorNegro);
+  transition: 0.5s;
+}
+.IconosRedes a:hover i{
+  color: var(--colorLetrasBlanco);
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 30px 0;
+}
+
+
+/*
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.25em;
+}
+*/
+
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  
+}
+
+.invisible-space {
+  margin-right: 20px; /* Ajusta el margen derecho según tu necesidad */
+}
+
+.footerNav ul li a{
+  color: var(--colorLetrasBlanco);
+  margin: 20px;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+.footerBottom{
+  background-color: var(--colorNegro);
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color: var(--colorLetrasBlanco);
+}
+
+.legal{
+  opacity: 0.7;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  color: var(--colorLetrasBlanco);
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 30px 5px;
+}
+
+@media (max-width: 850px){
+  .footerNav ul{
+    flex-direction: column;
+    text-align: center;
+  } 
+  .footerNav ul li{
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+  }
+  .IconosRedes a{
+    padding: 8px;
+    margin: 4px;
+  }
+
+
+}
+
+
+
+
+
 
 /* ---------------------------------------------------------- */
 /* Estilos para pantallas pequeñas --> Juan */
