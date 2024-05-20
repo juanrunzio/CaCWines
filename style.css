@@ -138,19 +138,16 @@ html {
   background-image: url("./img/pexels-photo-2664185.jpeg");
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  padding: 10rem;
   color: #f6f5f5;
-  padding-top: 50px;
 }
 
-.sobreNosotros h2 {
-  margin-top: -50px;
+.nosotros {
+  padding-bottom: 3rem;
+  font-size: 4rem;
 }
 
 .weus {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 50px;
   text-align: center;
   animation-name: izquierda;
   animation-duration: 3s;
@@ -179,6 +176,7 @@ html {
   margin-top: 0px;
   width: 90%;
   justify-content: end;
+  font-size: 1.2rem;
 }
 .tituloYfrase {
   margin-top: 1.5rem;
@@ -192,6 +190,7 @@ html {
   gap: 50px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   padding-top: 2rem;
+  padding-bottom: 1.1rem;
 }
 .historiaTexto {
   display: flex;
@@ -201,6 +200,7 @@ html {
 }
 
 .tituloDesarrollo {
+  font-size: 2rem;
   margin: auto;
   justify-content: end;
   color: #000000;
@@ -274,10 +274,13 @@ container {
   }
   .texto2 {
     margin: 0;
+    width: 100%;
   }
   .sobreNosotros {
     padding-top: 4rem;
     padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .nosotros {
     padding-bottom: 0.5rem;
@@ -335,6 +338,9 @@ container {
   .Desarrollo {
     margin-bottom: 0px;
     margin-top: 10px;
+  }
+  .tituloDesarrollo {
+    padding-top: 2rem;
   }
 }
 
@@ -460,43 +466,41 @@ button:hover {
 
 /*-------------------- CSS DE FOOTER --------------------*/
 
-
-footer{
+footer {
   background-color: var(--coloOpcionalNegro);
 }
-.footerContenedor{
+.footerContenedor {
   width: 100%;
-  padding: 70px 30px 20px ;
+  padding: 70px 30px 20px;
 }
-.IconosRedes{
+.IconosRedes {
   display: flex;
   justify-content: center;
 }
-.IconosRedes a{
+.IconosRedes a {
   text-decoration: none;
-  padding:  10px;
+  padding: 10px;
   background-color: var(--colorLetrasBlanco);
   margin: 10px;
   border-radius: 50%;
 }
-.IconosRedes a i{
+.IconosRedes a i {
   font-size: 2em;
   color: var(--colorNegro);
-  opacity: 0,9;
+  opacity: 0, 9;
 }
 /* Iconos de redes sociales */
-.IconosRedes a:hover{
+.IconosRedes a:hover {
   background-color: var(--colorNegro);
   transition: 0.5s;
 }
-.IconosRedes a:hover i{
+.IconosRedes a:hover i {
   color: var(--colorLetrasBlanco);
   transition: 0.5s;
 }
-.footerNav{
+.footerNav {
   margin: 30px 0;
 }
-
 
 /*
 ul {
@@ -508,18 +512,17 @@ li {
 }
 */
 
-.footerNav ul{
+.footerNav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  
 }
 
 .invisible-space {
   margin-right: 20px; /* Ajusta el margen derecho según tu necesidad */
 }
 
-.footerNav ul li a{
+.footerNav ul li a {
   color: var(--colorLetrasBlanco);
   margin: 20px;
   font-family: var(--font-primary);
@@ -528,21 +531,20 @@ li {
   font-size: 1.3em;
   opacity: 0.7;
   transition: 0.5s;
-
 }
-.footerNav ul li a:hover{
+.footerNav ul li a:hover {
   opacity: 1;
 }
-.footerBottom{
+.footerBottom {
   background-color: var(--colorNegro);
   padding: 20px;
   text-align: center;
 }
-.footerBottom p{
+.footerBottom p {
   color: var(--colorLetrasBlanco);
 }
 
-.legal{
+.legal {
   opacity: 0.7;
   font-family: var(--font-primary);
   text-transform: uppercase;
@@ -553,29 +555,22 @@ li {
   margin: 30px 5px;
 }
 
-@media (max-width: 850px){
-  .footerNav ul{
+@media (max-width: 850px) {
+  .footerNav ul {
     flex-direction: column;
     text-align: center;
-  } 
-  .footerNav ul li{
+  }
+  .footerNav ul li {
     text-transform: uppercase;
     justify-content: center;
     text-align: center;
     margin: 10px;
   }
-  .IconosRedes a{
+  .IconosRedes a {
     padding: 8px;
     margin: 4px;
   }
-
-
 }
-
-
-
-
-
 
 /* ---------------------------------------------------------- */
 /* Estilos para pantallas pequeñas --> Juan */
