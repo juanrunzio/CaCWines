@@ -342,6 +342,9 @@ container {
   .tituloDesarrollo {
     padding-top: 2rem;
   }
+  .logoPagina {
+    width: 55% !important;
+  }
 }
 
 /*-----------------------------------------------------------------------*/
@@ -687,6 +690,9 @@ li {
     top: 5%; /* Centra verticalmente el logo */
     left: 20px; /* Ajusta la posición horizontal para mantener el logo a la izquierda */
     transition: top 2s ease, left 2s ease;
+  }
+  .logoPagina {
+    width: 85%;
   }
 }
 
