@@ -48,85 +48,65 @@
     <section class="seccion-formulario">
       <h2>Contacto</h2>
       <form action="https://formspree.io/f/mvongjoa" method="POST">
-        <div>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombreUsuario" />
+        <div class="nombre-apellido">
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombreUsuario" />
+          </div>
+          <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellidoUsuario" />
+          </div>
         </div>
-
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellidoUsuario" />
-
-        <label for="correo">Correo Electronico:</label>
-        <input
-          type="email"
-          id="correo"
-          name="correoUsuario"
-        /><!--dfsdf@asda.asd "traba" para que no envie el formulario si no tiene la estructura de un correo-->
-        <label for="pass">
-          Contraseña:
-          <input type="password" id="pass" name="contraseñaUsuario" />
-        </label>
-        <div>
-          <label for="horarios"
-            >Ingrese en que franja horaria nos podemos comunicar:
-          </label>
+    
+        <div class="email-telefono">
+          <div>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correoUsuario" />
+          </div>
+          <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefonoUsuario" />
+          </div>
         </div>
+    
         <div>
-          <label for="TM">De 9hs a 12hs</label>
-          <input
-            type="radio"
-            id="TM"
-            name="horarrioDeContacto"
-            value="9hs a 12hs"
-          />
-          <label for="TT">De 12hs a 17hs</label>
-          <input
-            type="radio"
-            id="TT"
-            name="horarrioDeContacto"
-            value="12hs a 17hs"
-          />
+          <label for="horarios">Ingrese en qué franja horaria nos comunicaremos:</label>
+          <div>
+            <label for="TM">De 9hs a 12hs</label>
+            <input type="radio" id="TM" name="horarioDeContacto" value="9hs a 12hs" />
+            <label for="TT">De 12hs a 17hs</label>
+            <input type="radio" id="TT" name="horarioDeContacto" value="12hs a 17hs" />
+          </div>
         </div>
-        <label for="notificaciones"
-          >Indique si que tipo de notificaciones quiere recibir:
-        </label>
-
-        <label for="notificacion">Productos Nuevos </label>
-        <input
-          type="checkbox"
-          name="notificaciones"
-          id="notificacion"
-          value="nuevos productos"
-        />
-
-        <label for="notificacion">Promociones </label>
-        <input
-          type="checkbox"
-          name="notificaciones"
-          id="promos"
-          value="promociones"
-        />
+    
         <div>
-          <label for="paisOrigen">Nacionalidad</label>
+          <label for="notificaciones">Indique qué tipo de notificaciones quiere recibir:</label>
+          <div>
+            <label for="nuevos-productos">Productos Nuevos</label>
+            <input type="checkbox" id="nuevos-productos" name="notificaciones" value="nuevos productos" />
+            <label for="promos">Promociones</label>
+            <input type="checkbox" id="promos" name="notificaciones" value="promociones" />
+          </div>
+        </div>
+    
+        <div>
+          <label for="paisOrigen">Nacionalidad:</label>
           <select name="Nacionalidad" id="paisOrigen">
             <option value="Argentina">Argentina</option>
-            <option value="Uruguaya">Uruguaya</option>
-            <option value="Chilena">Chilena</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Chile">Chile</option>
           </select>
         </div>
+    
         <div>
           <label for="mensaje">Escriba sus comentarios:</label>
-          <textarea
-            name="comentarios"
-            id="mensaje"
-            cols="30"
-            rows="10"
-          ></textarea>
+          <textarea name="comentarios" id="mensaje" cols="30" rows="10"></textarea>
         </div>
+    
         <input type="submit" value="Enviar" />
       </form>
     </section>
-
 
 
     <footer class="pie-de-pagina" id="footer">

@@ -467,8 +467,7 @@ button:hover {
     url("./img/CuadroTest.webp");
 }
 /*---------- Diseño del Formulario de Contacto ----------*/
-
-/* Estilos para la seccion del formulario */
+/* Estilos para la sección del formulario */
 .seccion-formulario {
   margin: 20px;
   padding: 20px;
@@ -481,31 +480,39 @@ button:hover {
 /* Estilo H2 Texto y demas */
 .seccion-formulario h2 {
   text-align: center;
+  font-family: var(--font-primary);
+  margin-bottom: 30px;
+
 }
 
 /* Etiquetas de texto */
 .seccion-formulario label {
   font-family: var(--font-primary);
-  display: block;
+  display: inline-block;
+  width: 100px;
   margin-bottom: 5px;
+  margin-right: 20px;
   font-weight: bold;
   color: var(--colorLetrasBlanco);
+  white-space: nowrap;
 }
 
 /* H2 Contacto y Texto */
 
 .seccion-formulario h2 {
   text-align: center;
+  font-family: var(--font-secondary);
+  color: var(--colorLetrasBlanco);
 }
 
-/* Entradas Texto */
+/* Entradas de texto y demas */
 .seccion-formulario input[type="text"],
 .seccion-formulario input[type="email"],
-.seccion-formulario input[type="password"],
+.seccion-formulario input[type="tel"],
 .seccion-formulario select,
 .seccion-formulario textarea {
   font-family: var(--font-primary);
-  width: 100%;
+  width: calc(100% - 0px); /* Ajuste de ancho para inputs */
   padding: 8px;
   margin-bottom: 10px;
   background-color: var(--colorLetrasGris);
@@ -515,14 +522,49 @@ button:hover {
   box-shadow: 2px 2px 2px rgba(253, 225, 221, 0.6);
 }
 
-/* Checkbox  */
+/* Estilos para nombre y apellido */
+.nombre-apellido {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nombre-apellido div {
+  width: calc(50% - 10px); /* Ajuste de ancho para divs */
+}
+
+.email-telefono {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-telefono div {
+  width: calc(50% - 10px); /* Ajuste de ancho para divs */
+}
+
+
+.nombre-apellido input[type="text"],
+.email-telefono input[type="email"],
+.email-telefono input[type="tel"] {
+  width: 100%; /* Ancho completo dentro de cada div */
+}
+
+
+
+
+
+/* Checkbox y Radio */
 .seccion-formulario input[type="radio"],
 .seccion-formulario input[type="checkbox"] {
   margin-right: 5px;
   background-color: var(--colorLetrasGris);
 }
 
-/* boton de enviar */
+/* Afecta a todos los DIV del form */
+.seccion-formulario div {
+  margin-bottom: 10px;
+}
+
+/* Boton de enviar */
 .seccion-formulario input[type="submit"] {
   background-color: var(--colorPrimario);
   color: var(--colorLetrasBlanco);
@@ -713,11 +755,13 @@ li {
   }
 
   #nuestrosVinos h3 {
-    margin-top: 40px;
+    margin-top: 10px;
   }
 
   #nuestrosVinos .carta {
-    padding: 20px;
+    position: relative;
+    justify-content: center;
+    padding: 60px;
     max-width: 30%;
     background-size: 100% 150px;
     background-repeat: no-repeat;
@@ -727,6 +771,30 @@ li {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
 
+  .vinos button {
+    bottom: 10px;
+    font-size: 1.25em;
+
+    font-family: var(--font-primary);
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+  }
+
+  #nuestrosVinos .carta button {
+    position: absolute;
+    bottom: 15px;
+    left: 50%; 
+    transform: translateX(-50%); 
+  }
+
+  button:hover {
+    background-color: rgb(101, 33, 165);
+  }
+  
   .carta:first-child {
     background-image: linear-gradient(
         0deg,
